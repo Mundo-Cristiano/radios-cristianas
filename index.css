@@ -63,24 +63,29 @@ ul {
 
 /*Orientacion Vertical*/
 
-@media (max-width: 375px) and (orientation: portrait) {
-    body {
-        font-size: 0.7rem;
-    }
+@media (max-width: 320px) and (orientation: portrait) {
     .grid-container {
-        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
-        grid-auto-rows: minmax(110px, auto);
+        grid-template-columns: repeat(auto-fill, minmax(93px, 1fr));
+        grid-auto-rows: minmax(93px, auto);
     }
     .iconos {
-        width: 100px;
-        height: 100px;
+        width: 83px;
+        height: 83px;
     }
 }
 
-@media (min-width: 768px) and (orientation: portrait) {
-    body {
-        font-size: 1rem;
+@media only screen and (min-width: 321px) and (max-width: 411px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(105px, 1fr));
+        grid-auto-rows: minmax(105px, auto);
     }
+    .iconos {
+        width: 95px;
+        height: 95px;
+    }
+    }
+
+@media (min-width: 768px) and (orientation: portrait) {
     .grid-container {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         grid-auto-rows: minmax(200px, auto);
@@ -93,21 +98,21 @@ ul {
 
 /*Orientacion Horizontal*/
 
-@media (max-width: 640px) and (orientation: landscape) {
+@media (max-width: 480px) and (orientation: landscape) {
     body {
         font-size: 0.7rem;
     }
     .grid-container {
-        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-        grid-auto-rows: minmax(140px, auto);
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        grid-auto-rows: minmax(100px, auto);
     }
     .iconos {
-        width: 130px;
-        height: 130px;
+        width: 100px;
+        height: 100px;
     }
 }
 
-@media only screen and (min-width: 641px) and (max-width: 767px) {
+@media only screen and (min-width: 481px) and (max-width: 767px) {
     body {
         font-size: 0.7rem;
     }
