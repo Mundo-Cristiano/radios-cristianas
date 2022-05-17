@@ -63,12 +63,12 @@ ul {
 
 @media (max-width: 320px) and (orientation: portrait) {
     .grid-container {
-        grid-template-columns: repeat(auto-fill, minmax(93px, 1fr));
-        grid-auto-rows: minmax(93px, auto);
+        grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+        grid-auto-rows: minmax(90px, auto);
     }
     .iconos {
-        width: 83px;
-        height: 83px;
+        width: 80px;
+        height: 80px;
     }
 }
 
